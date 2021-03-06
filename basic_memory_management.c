@@ -15,7 +15,7 @@ int main () {
    strcat(str, " Lins");
    printf("data: %s,  ram address: %u\n", str, str);
 
-   // deallocate allocate memory 
+   // deallocate memory 
    free(str);
    
    return(0);
