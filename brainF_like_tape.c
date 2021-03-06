@@ -1,32 +1,22 @@
-#include <stdio.h>
 
-
+include <stdio.h>
 
 int tape[] = {};
 
 int *ptr = tape;
 
-void up(){
-ptr += 1;
-}
+#define UP ptr += 1;
+#define DOWN prr -= 1;
+#define ADD *ptr += 1;
+#define SUB *ptr -= 1;
+#define OUT printf("%d\n", *ptr);
 
-void down(){
-    ptr -= 1;
-}
 
-void add(){
-   *ptr += 1;
-}
 
-void sub(){
-   *ptr -= 1;   
-}
 
-void out(){
-   printf("%d\n", *ptr);
-}
 
 int main(){
-up(); up(); add(); add(); sub(); out();
-return 0;
+  UP; UP; ADD; ADD; SUB; OUT;
+
+  return 0;
 }
