@@ -5,10 +5,8 @@
 int main () {
 
    int  arr[] = {5, 7, 3};
-   int  *ptr;
 
-   
-   ptr = arr;
+   int *ptr = arr;
   
    
 
