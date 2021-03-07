@@ -1,7 +1,6 @@
+#include <stdio.h>
 
-include <stdio.h>
-
-int tape[] = {};
+int tape[1000] = {};
 
 int *ptr = tape;
 
