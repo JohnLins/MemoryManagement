@@ -18,13 +18,13 @@ int main()
     third = (struct Node*)malloc(sizeof(struct Node)); 
   
     
-    (*head).value = 1;
+    (*head).value = 5;
     (*head).next = second;  
   
-    (*second).value = 2;
+    (*second).value = 8;
     (*second).next = third; 
   
-    (*third).value = 3; 
+    (*third).value = 37; 
     (*third).next = NULL; 
     
     printf("%d\n", (*head).value); 
