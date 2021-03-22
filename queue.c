@@ -73,7 +73,7 @@ int main()
    
     
     for(int i = 0; i < 30; i++){
-        push(QUEUE,i);// q_len++;
+        push(QUEUE,i);
     }
   
     display(QUEUE);
