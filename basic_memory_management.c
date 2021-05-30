@@ -3,20 +3,19 @@
 #include <string.h>
 
 int main () {
-   char *str;
-
    // allocate memory 
-   str = (char *) malloc(4);
-   strcpy(str, "John");
-   printf("data: %s,  ram address: %u\n", str, str);
+   int* list = malloc(sizeof(int)*2);
+   list[0] = 1;
+   list[1] = 2;
+   printf("value: %d,  address: %p\n", list[0], &list);
 
    // reallocating memory
-   str = (char *) realloc(str, 9);
-   strcat(str, " Lins");
-   printf("data: %s,  ram address: %u\n", str, str);
+   list = (int*)realloc(list, 3);
+   list[2] = 3;
+   printf("value: %d,  address: %p\n", list[2], &list);
 
    // deallocate memory 
-   free(str);
+   free(list);
    
    return(0);
 }
