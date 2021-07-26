@@ -11,10 +11,10 @@ typedef struct Node {
 
 void unshift(Node** ref, int data) {
   
-  struct Node* new_node = (Node*)malloc(sizeof(Node));
+  struct Node* newNode = (Node*)malloc(sizeof(Node));
 
-  new_node->item = data;
-  new_node->next = (*ref);
+  newNode->item = data;
+  newNode->next = (*ref);
 
   
   (*ref) = new_node;
@@ -28,27 +28,27 @@ void pushAfter(Node* node, int data) {
   }
 
   Node* new_node = (Node*)malloc(sizeof(Node));
-  new_node->item = data;
-  new_node->next = node->next;
-  node->next = new_node;
+  newNode->item = data;
+  newNode->next = node->next;
+  node->next = newNode;
 }
 
 void push(Node** ref, int data) {
-  Node* new_node = (Node*)malloc(sizeof(Node));
+  Node* newNode = (Node*)malloc(sizeof(Node));
   Node* last = *ref;
 
-  new_node->item = data;
-  new_node->next = NULL;
+  newNode->item = data;
+  newNode->next = NULL;
 
   if (*ref == NULL) {
-    *ref = new_node;
+    *ref = newNode;
     return;
   }
 
   while (last->next != NULL)
     last = last->next;
 
-  last->next = new_node;
+  last->next = newNode;
   return;
 }
 
