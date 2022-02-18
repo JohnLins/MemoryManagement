@@ -3,7 +3,7 @@
  
 int main(void) 
 {
-    int *space = malloc(4*sizeof(int)); 
+    int *space = (int*)malloc(4*sizeof(int)); 
  
 
     space[0] = 4;
